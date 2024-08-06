@@ -7,13 +7,12 @@ output:
 
 Computers and '*machine-intelligence*' are frequently discussed as the means for addressing today's critical educational challenges: learning remotely, learning at one's own pace, learning according to one's needs and background, providing quality education to all and for all. In this course, we welcome all master-level students with technical or non-technical backgrounds. Through the semester, we will cover topics on the intersection of Artificial Intelligence in Education, Educational Technologies, and Human-Computer Interaction and we will carry out hands-on exercises to deepen our understanding of intelligent learning technologies. Specifically, we will go over the following:
 
-- [[Learning Theories and Technologies]]  
-- [[Artificial intelligence in education (AIED)]]  
-- [[Student Modeling]]  
-- [[Intelligent Tutoring Systems (ITS)]]
-- [[Collaborative learning environments]] / [[MOOCs]]  
-- [[Learning Management Systems]] / [[Open Educational Resources]]  
-- [[Fairness, Accountability, Transparency, and Ethics in AIED]]
+- Learning Theories and Technologies
+- Artificial intelligence in education (AIED)
+- Student Modeling]]  
+- Intelligent Tutoring Systems (ITS)
+- Collaborative learning environments
+- Fairness, Accountability, Transparency, and Ethics in AIED
 
 ## **Learning Objectives**
 Students will learn about the state-of-the-art research in Educational Technologies with a focus on Artificial Intelligence in Education. They will familiarize themselves with algorithmic techniques for modeling cognition and knowledge, and they will explore how these representations are used in practice. Students will explore various learning environments supported by "intelligent" algorithms and will learn about using technology as a tool and means for orchestrating learning.

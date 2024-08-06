@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: 
+github-repo: https://github.com/iachounta/ILEtextbook/
 description: "Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025"
 cover-image: './images/ILE.png'
 ---
@@ -29,5 +29,6 @@ install.packages("bookdown")
 # devtools::install_github("rstudio/bookdown")
 ```
 
-Happy readings :)
+Happy readings :) \\
+
 -irene

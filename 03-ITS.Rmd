@@ -13,7 +13,7 @@ Following, coached practice became popular with ITSs like the PAT Algebra Tutor 
 ## Cognitive Tutors
 A sub-category of problem-solving ITSs are the Cognitive Tutors, that are based on ACT-R theory of skill knowledge [@anderson2013architecture]. This theory assumes a fundamental distinction between declarative knowledge and procedural knowledge (see \@ref(learningtheories)). ACT-R assumes that skill knowledge is encoded initially in declarative form as informed by the learner's experience. Then, through practicing, the learner learns or constructs general rules while solving problems. These rules are encoded as procedural knowledge. For representing procedural knowledge, ACT-R uses production rules. These rules aim to describe the relationship between problem solving goals, learners' actions and states. 
 
-Remember the example we discussed in the class: how does a student learn to solve equations? Then looking at the interface of a math tutor (see Figure \@ref(mathtutor)), try to explain the problem-solving practice of a student and how the ITS captures the declarative and procedural knowledge.
+Remember the example we discussed in the class: how does a student learn to solve equations? Then looking at the interface of a math tutor (see Figure \@ref(fig:mathtutor)), try to explain the problem-solving practice of a student and how the ITS captures the declarative and procedural knowledge.
 
 ```{r mathtutor, fig.cap="An example interface of a math tutor, taken from the [CMU Math Tutors](https://mathtutor.web.cmu.edu/home)", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/mathtutor.png")
@@ -31,7 +31,7 @@ In contrast to model-tracing tutors, the example-tracing tutors try to understan
 Knowledge-tracing tutors are similar to model-tracing tutors. However, instead of tracing the learners' actions, they are used to calculate the required skills (**knowledge**) students learned. This can be done by employing knowledge graphs or bayesian knowledge models that assess learners' knowledge on specific knowedge components.
 
 ## Architecture of Intelligent Tutoring Systems
-The fundamental architecture of an ITS consists of four components (see Figure \@ref(itsarchitecture)):
+The fundamental architecture of an ITS consists of four components (see Figure \@ref(fig:itsarchitecture)):
 
 -    The interface component supports student interaction (input/output) with the ITS.
 -    The domain model contains the rules, concepts, and knowledge related to the domain that should be learned.
