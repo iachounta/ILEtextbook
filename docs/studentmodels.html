@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Student Modeling | Course Textbook: Intelligent Learning Environments</title>
+  <meta name="description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Student Modeling | Course Textbook: Intelligent Learning Environments" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/./images/ILE.png" />
+  <meta property="og:description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Student Modeling | Course Textbook: Intelligent Learning Environments" />
+  
+  <meta name="twitter:description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  <meta name="twitter:image" content="/./images/ILE.png" />
+
+<meta name="author" content="Irene-Angelica Chounta" />
+
+
+<meta name="date" content="2024-08-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="its.html"/>
+<link rel="next" href="cits.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Intelligent Learning Environments</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i><b>1.1</b> <strong>Learning Objectives</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> <strong>Literature</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="learningtheories.html"><a href="learningtheories.html"><i class="fa fa-check"></i><b>2</b> Learning Theories and Technologies</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="learningtheories.html"><a href="learningtheories.html#how-do-people-learn"><i class="fa fa-check"></i><b>2.1</b> How do people learn?</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="learningtheories.html"><a href="learningtheories.html#behaviorism"><i class="fa fa-check"></i><b>2.1.1</b> Behaviourism</a></li>
+<li class="chapter" data-level="2.1.2" data-path="learningtheories.html"><a href="learningtheories.html#constructivism"><i class="fa fa-check"></i><b>2.1.2</b> Constructivism</a></li>
+<li class="chapter" data-level="2.1.3" data-path="learningtheories.html"><a href="learningtheories.html#social-constructivism"><i class="fa fa-check"></i><b>2.1.3</b> Social Constructivism</a></li>
+<li class="chapter" data-level="2.1.4" data-path="learningtheories.html"><a href="learningtheories.html#cognitivism"><i class="fa fa-check"></i><b>2.1.4</b> Cognitivism</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="learningtheories.html"><a href="learningtheories.html#educational-technology-and-educational-technologies"><i class="fa fa-check"></i><b>2.2</b> Educational technology and educational technologies</a></li>
+<li class="chapter" data-level="2.3" data-path="learningtheories.html"><a href="learningtheories.html#educational-technologies-and-learning-theories"><i class="fa fa-check"></i><b>2.3</b> Educational Technologies and Learning Theories</a></li>
+<li class="chapter" data-level="2.4" data-path="learningtheories.html"><a href="learningtheories.html#intelligent-learning-environments"><i class="fa fa-check"></i><b>2.4</b> Intelligent Learning Environments</a></li>
+<li class="chapter" data-level="2.5" data-path="learningtheories.html"><a href="learningtheories.html#questions-for-chapter-reflearningtheories"><i class="fa fa-check"></i><b>2.5</b> Questions for Chapter @ref(learningtheories)</a></li>
+<li class="chapter" data-level="2.6" data-path="learningtheories.html"><a href="learningtheories.html#to-read"><i class="fa fa-check"></i><b>2.6</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="its.html"><a href="its.html"><i class="fa fa-check"></i><b>3</b> Intelligent Tutoring Systems</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="its.html"><a href="its.html#a-brief-history-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.1</b> A brief history of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.2" data-path="its.html"><a href="its.html#cognitive-tutors"><i class="fa fa-check"></i><b>3.2</b> Cognitive Tutors</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="its.html"><a href="its.html#model-tracing-tutors"><i class="fa fa-check"></i><b>3.2.1</b> Model-tracing Tutors</a></li>
+<li class="chapter" data-level="3.2.2" data-path="its.html"><a href="its.html#example-tracing-tutors"><i class="fa fa-check"></i><b>3.2.2</b> Example-tracing Tutors</a></li>
+<li class="chapter" data-level="3.2.3" data-path="its.html"><a href="its.html#knowledge-tracing-tutors"><i class="fa fa-check"></i><b>3.2.3</b> Knowledge-tracing Tutors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="its.html"><a href="its.html#architecture-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.3</b> Architecture of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.4" data-path="its.html"><a href="its.html#effectiveness-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.4</b> Effectiveness of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.5" data-path="its.html"><a href="its.html#questions-for-chapter-refits"><i class="fa fa-check"></i><b>3.5</b> Questions for Chapter @ref(its)</a></li>
+<li class="chapter" data-level="3.6" data-path="its.html"><a href="its.html#to-read-1"><i class="fa fa-check"></i><b>3.6</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="studentmodels.html"><a href="studentmodels.html"><i class="fa fa-check"></i><b>4</b> Student Modeling</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="studentmodels.html"><a href="studentmodels.html#learning-curve-and-predicted-learning-curve"><i class="fa fa-check"></i><b>4.1</b> Learning Curve and Predicted Learning Curve</a></li>
+<li class="chapter" data-level="4.2" data-path="studentmodels.html"><a href="studentmodels.html#overlay-student-models"><i class="fa fa-check"></i><b>4.2</b> Overlay Student Models</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="studentmodels.html"><a href="studentmodels.html#item-response-theory-models"><i class="fa fa-check"></i><b>4.2.1</b> Item-Response Theory Models</a></li>
+<li class="chapter" data-level="4.2.2" data-path="studentmodels.html"><a href="studentmodels.html#model-tracing-models"><i class="fa fa-check"></i><b>4.2.2</b> Model-tracing Models</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="studentmodels.html"><a href="studentmodels.html#questions-for-chapter-refstudentmodels"><i class="fa fa-check"></i><b>4.3</b> Questions for Chapter @ref(studentmodels)</a></li>
+<li class="chapter" data-level="4.4" data-path="studentmodels.html"><a href="studentmodels.html#to-read-2"><i class="fa fa-check"></i><b>4.4</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="cits.html"><a href="cits.html"><i class="fa fa-check"></i><b>5</b> Collaborative Learning</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="cits.html"><a href="cits.html#computer-supported-collaborative-learning-environments"><i class="fa fa-check"></i><b>5.1</b> Computer-Supported Collaborative Learning Environments</a></li>
+<li class="chapter" data-level="5.2" data-path="cits.html"><a href="cits.html#collaborative-intelligent-tutoring-systems-citss"><i class="fa fa-check"></i><b>5.2</b> Collaborative Intelligent Tutoring Systems (CITSs)</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="cits.html"><a href="cits.html#adaptive-collaborative-learning-support"><i class="fa fa-check"></i><b>5.2.1</b> Adaptive Collaborative Learning Support</a></li>
+<li class="chapter" data-level="5.2.2" data-path="cits.html"><a href="cits.html#citss-for-problem-based-learning"><i class="fa fa-check"></i><b>5.2.2</b> CITSs for Problem-based Learning</a></li>
+<li class="chapter" data-level="5.2.3" data-path="cits.html"><a href="cits.html#citss-for-scripted-collaboration"><i class="fa fa-check"></i><b>5.2.3</b> CITSs for scripted collaboration</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="cits.html"><a href="cits.html#questions-for-chapter-refcits"><i class="fa fa-check"></i><b>5.3</b> Questions for Chapter @ref(cits)</a></li>
+<li class="chapter" data-level="5.4" data-path="cits.html"><a href="cits.html#to-read-3"><i class="fa fa-check"></i><b>5.4</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aied.html"><a href="aied.html"><i class="fa fa-check"></i><b>6</b> Artificial Intelligence in Education</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="aied.html"><a href="aied.html#what-is-intelligence"><i class="fa fa-check"></i><b>6.1</b> What is Intelligence?</a></li>
+<li class="chapter" data-level="6.2" data-path="aied.html"><a href="aied.html#what-is-artificial-intelligence"><i class="fa fa-check"></i><b>6.2</b> What is Artificial Intelligence?</a></li>
+<li class="chapter" data-level="6.3" data-path="aied.html"><a href="aied.html#artificial-intelligence-in-education-aied"><i class="fa fa-check"></i><b>6.3</b> Artificial Intelligence in Education (AIED)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="aied.html"><a href="aied.html#a-bit-of-history"><i class="fa fa-check"></i><b>6.3.1</b> A Bit of History</a></li>
+<li class="chapter" data-level="6.3.2" data-path="aied.html"><a href="aied.html#aied-premises"><i class="fa fa-check"></i><b>6.3.2</b> AIED Premises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aied.html"><a href="aied.html#ai-methods-in-education"><i class="fa fa-check"></i><b>6.4</b> AI Methods in Education</a></li>
+<li class="chapter" data-level="6.5" data-path="aied.html"><a href="aied.html#fate"><i class="fa fa-check"></i><b>6.5</b> FATE</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="aied.html"><a href="aied.html#ai-bias"><i class="fa fa-check"></i><b>6.5.1</b> AI Bias</a></li>
+<li class="chapter" data-level="6.5.2" data-path="aied.html"><a href="aied.html#accountability-transparency-in-ai"><i class="fa fa-check"></i><b>6.5.2</b> Accountability &amp; Transparency in AI:</a></li>
+<li class="chapter" data-level="6.5.3" data-path="aied.html"><a href="aied.html#ethics-and-aied"><i class="fa fa-check"></i><b>6.5.3</b> Ethics and AIED</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="aied.html"><a href="aied.html#questions-for-chapter-refaied"><i class="fa fa-check"></i><b>6.6</b> Questions for Chapter @ref(aied)</a></li>
+<li class="chapter" data-level="6.7" data-path="aied.html"><a href="aied.html#to-read-4"><i class="fa fa-check"></i><b>6.7</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Course Textbook: Intelligent Learning Environments</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="studentmodels" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Student Modeling<a href="studentmodels.html#studentmodels" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Going back to the definition of Intelligent Learning Environments (see Chapter <a href="learningtheories.html#learningtheories">2</a>) and Intelligent Tutoring Systems (see Chapter <a href="its.html#its">3</a>), it is evident that in order to provide personalized support tailored to the learners’ individual needs, one needs to maintain an accurate and up-to-date representation of individual students. And, one may ask: “<em>How?</em>”</p>
+<p>When discussing about the architecture of Intelligent Tutoring Systems (Chapter <a href="its.html#its">3</a>), we talked about a fundamental compontent: <strong>the student model</strong> and we described it as containing knowledge about the students: their cognitive and affective states, and their progress as they learn. Peter Brusilovsky provided the following definition for student models:</p>
+<p>“<em>A student model is a representation within the architecture of an intelligent learning environment (ILE) of a student’s understanding of material being taught</em>” <span class="citation">(<a href="#ref-brusilovsky1994student">Brusilovsky 1994</a>)</span></p>
+<div id="learning-curve-and-predicted-learning-curve" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Learning Curve and Predicted Learning Curve<a href="studentmodels.html#learning-curve-and-predicted-learning-curve" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>An old saying states that “practice makes better” and another one says that “repetition is the mother of learning”. From our own experience, we can attest that learning happens as humans practice over time. This idea is depicted by the concept of the Learning Curve (see Figure <a href="studentmodels.html#fig:learningcurve">4.1</a>). Practically, this curve shows that the more a human practices a skill or a piece of knowledge, the more they learn.</p>
+<div class="figure"><span style="display:block;" id="fig:learningcurve"></span>
+<img src="images/learningcurve.png" alt="An ideal learning curve that demonstrates the relationship between experience and learning" width="13cm" />
+<p class="caption">
+Figure 4.1: An ideal learning curve that demonstrates the relationship between experience and learning
+</p>
+</div>
+<p>Figure <a href="studentmodels.html#fig:learningcurve">4.1</a> shows an ideal curve and Figure <a href="studentmodels.html#fig:learningcurvestages">4.2</a> shows different stages of the learning process, as they can be traced on a learning curve.</p>
+<div class="figure"><span style="display:block;" id="fig:learningcurvestages"></span>
+<img src="images/learningcurvestages.png" alt="The different stages of the learning process as depicted on an ideal learning curve that demonstrates the relationship between time and learning" width="13cm" />
+<p class="caption">
+Figure 4.2: The different stages of the learning process as depicted on an ideal learning curve that demonstrates the relationship between time and learning
+</p>
+</div>
+<p>In reality, an empirical learning curve (that is, the average correct responses for a skill over each learning opportunity) as calculated by data is not as smooth as the ideal learning curve (see Figure <a href="studentmodels.html#fig:empiricallearningcurve">4.3</a>. This may happen due to recording errors, but also to the complicated nature of learning (such as forgetting or slipping).</p>
+<div class="figure"><span style="display:block;" id="fig:empiricallearningcurve"></span>
+<img src="images/empiricallearningcurve.png" alt="The different stages of the learning process as depicted on a more realistic learning curve" width="13cm" />
+<p class="caption">
+Figure 4.3: The different stages of the learning process as depicted on a more realistic learning curve
+</p>
+</div>
+<p>To operationalize mastery learning and learning curves in the context of student models and intelligent tutoring systems, the predicted learning curve is used instead since it is easier to calucate but also much smoother. To compute the predicted learning curve, typically an item-response theory (IRT) model is used (either the Additive Factor Model (AFM) or one of the same family). This model predicts how a student will perform for each skill on each learning opportunity. The predicted learning curve practically shows the average predicted error of a skill (y-axis) over each of the learning opportunities (x-axis) (see Figure <a href="studentmodels.html#fig:predictedlearningcurve">4.4</a>).</p>
+<p>Precicted learning curves may reveal the following <span class="citation">(<a href="#ref-cen2007over">Cen, Koedinger, and Junker 2007</a>)</span>:
+1. How much practice a student needs to master a skill; Ideally, a predicted learning curve should start high and end high (why?)
+2. What is the optimal set of skills to match the learners’ needs; as before, a predicted learning curve should start high and end high (why?)</p>
+<div class="figure"><span style="display:block;" id="fig:predictedlearningcurve"></span>
+<img src="images/predictedlearningcurve.png" alt="The predicted learning curve shows a precise prediction of students' success rate at each learning opportunity" width="13cm" />
+<p class="caption">
+Figure 4.4: The predicted learning curve shows a precise prediction of students’ success rate at each learning opportunity
+</p>
+</div>
+</div>
+<div id="overlay-student-models" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Overlay Student Models<a href="studentmodels.html#overlay-student-models" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Student models that track student’s knowledge as subset of the expert/system’s knowledge of domain (domain model) are called Overlay Student Models. These models may be <em>perceived</em> annotated versions of the knowledge representations used by domain models that asssess learners’ knowledge. Overlay student models track some pedagogically relevant measurement as a function of the overlay type (for example, skills, facts, or concepts). Here we will discuss two kinds of overlay models: item-response theory models and model-tracing models <span class="citation">(<a href="#ref-pavlik2013tutoring">Pavlik Jr et al. 2013</a>)</span>.</p>
+<div id="item-response-theory-models" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Item-Response Theory Models<a href="studentmodels.html#item-response-theory-models" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Item-Response Theory (IRT) (or else, latent response theory) premise is to calculate the probability of a correct response to an item as a mathematical function of person and item parameters. In practice IRT aims to explain the relationship between latent traits (unobservable characteristics or attributes) and their manifestations (observed outcomes, responses or performance). To do so, one should establish a link between the properties of items on an instrument (this can be a knowledge questionnaire), learners’ responding to the items of the questionnaire and the underlying trait being measured (that is, learning). IRT models typically use a structure called Q-matrix to represent the relationship between instrument items’ and learners’ responses.</p>
+<p>Three typical IRT models are the Additive Factors Model (AFM), the Performance Factors Model (PFM) and the Instructional Factors Model (IFM). Briefly:</p>
+<ul>
+<li>the Additive Factor Models (AFM): Use logistic regression to predict the probability that the student answers a question/item correctly. To make this prediction, the AFM uses the student’s prior knowledge, the difficulty of the item, the learning rate of the student (that is, how fast the student learns) and the number of practicing opportunities <span class="citation">(<a href="#ref-cen2006learning">Cen, Koedinger, and Junker 2006</a>)</span>;</li>
+<li>the Performance Factor Models (PFM): Same as the AFM but it differentiates opportunities based on correct and incorrect responses. That is, the prediction is made depending on student’s prior knowledge, difficulty of the item, learning rate of the student and the number of correct and incorrect prior opportunities <span class="citation">(<a href="#ref-pavlik2009performance">Pavlik, Cen, and Koedinger 2009</a>)</span>;</li>
+<li>the Instructional Factor Models (IFM): Same as the PFM but this time the model takes into account the “tells”. that is, how many times the tutor gave the student the correct answer or additional help <span class="citation">(<a href="#ref-chi2011instructional">Chi et al. 2011</a>)</span>.</li>
+</ul>
+</div>
+<div id="model-tracing-models" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Model-tracing Models<a href="studentmodels.html#model-tracing-models" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Model-tracing models operational principle is to encode the domain model (expert solution) as a set of production rules and compare the student’s actions to the domain model. In this way, the tutor tries to understand student actions. If the student’s action is the same as the domain model, then everything is great! If the student’s action match to some extent then the tutor will follow up with alternative questions to ensure learning. If the student’s action does not match with the domain model, then the tutor is not able to understand the error. The tutor will continue asking the question until the student’s response matches to the domain model.</p>
+<p>One of the most well-know modeling approaches for implementing model-tracing models is Bayesian Knowledge Tracing (BKT). BKT is typically used to track students’ progress from one problem to the next relative to production rules practically mapping students’ skills either as learned or unlearned. BKT predicts whether a student has learned a skill based on four probabilities <span class="citation">(<a href="#ref-corbett1994knowledge">Corbett and Anderson 1994</a>)</span>:</p>
+<ul>
+<li>P(known): the probability that the student already knew a skill.</li>
+<li>P(will learn): the probability that the student will learn a skill on the next practice opportunity.</li>
+<li>P(slip): the probability that the student will answer incorrectly despite knowing a skill.</li>
+<li>P(guess): the probability that the student will answer correctly despite not knowing a skill.</li>
+</ul>
+</div>
+</div>
+<div id="questions-for-chapter-refstudentmodels" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Questions for Chapter <a href="studentmodels.html#studentmodels">4</a><a href="studentmodels.html#questions-for-chapter-refstudentmodels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>“Student models”: Provide a definition, purpose, and examples.</li>
+<li>What are the basic modeling parameters for Bayesian Knowledge Tracing (BKT)?</li>
+<li>What is Item Reponse Theoty and what are the Item Response Theory (IRT) models?</li>
+<li>What is the relationship between student models and the learning curve?</li>
+<li>How is the learning curve operationalized in Intelligent Tutoring Systems?</li>
+<li>A family of common student models is the Item Response Theory (IRT) models and in particular, the AFM, the PFM, and the IFM. Explain what are the similarities and differences between these models, how can they be implemented (regression functions) and relate your response to theories of cognition and learning. Please elaborate on how the models’ differences may impact their performance in terms of accuracy and goodness of fit.</li>
+</ol>
+</div>
+<div id="to-read-2" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> To-Read<a href="studentmodels.html#to-read-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=040d21fb726c5175eca9e37801031519f06e0d86#page=63">Pavlik Jr, P. I., Brawner, K., Olney, A., &amp; Mitrovic, A. (2013). Tutoring systems. Des. Recommendations Intell. Tutoring Syst, 1, 39-68.</a></li>
+<li><a href="http://pact.cs.cmu.edu/pubs/Cen%2C%20Koedinger%20%26%20Junker06.pdf">Cen, H., Koedinger, K., &amp; Junker, B. (2006, June). Learning factors analysis–a general method for cognitive model evaluation and improvement. In International conference on intelligent tutoring systems (pp. 164-175). Berlin, Heidelberg: Springer Berlin Heidelberg.</a></li>
+<li><a href="http://pact.cs.cmu.edu/pubs/AIED%202009%20final%20Pavlik%20Cen%20Keodinger%20corrected.pdf">Pavlik, P. I., Cen, H., &amp; Koedinger, K. R. (2009). Performance factors analysis–a new alternative to knowledge tracing. In Artificial intelligence in education (pp. 531-538). Ios Press.</a></li>
+<li><a href="http://pact.cs.cmu.edu/pubs/Chi,%20Koedinger%20Gordon,%20Jordon%20&amp;%20VanLehn%20-%20edm2011.pdf">Chi, M., Koedinger, K. R., Gordon, G. J., Jordon, P., &amp; VanLahn, K. (2011). Instructional factors analysis: A cognitive model for multiple instructional interventions.</a></li>
+<li><a href="http://act-r.psy.cmu.edu/wordpress/wp-content/uploads/2012/12/893CorbettAnderson1995.pdf">Corbett, A. T., &amp; Anderson, J. R. (1994). Knowledge tracing: Modeling the acquisition of procedural knowledge. User modeling and user-adapted interaction, 4, 253-278.</a></li>
+</ol>
+
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-brusilovsky1994student" class="csl-entry">
+Brusilovsky, Peter. 1994. <span>“Student Model Centered Architecture for Intelligent Learning Environments.”</span> In.
+</div>
+<div id="ref-cen2007over" class="csl-entry">
+Cen, Hao, Kenneth R Koedinger, and Brian Junker. 2007. <span>“Is over Practice Necessary?-Improving Learning Efficiency with the Cognitive Tutor Through Educational Data Mining.”</span> <em>Frontiers in Artificial Intelligence and Applications</em> 158: 511.
+</div>
+<div id="ref-cen2006learning" class="csl-entry">
+Cen, Hao, Kenneth Koedinger, and Brian Junker. 2006. <span>“Learning Factors Analysis–a General Method for Cognitive Model Evaluation and Improvement.”</span> In <em>International Conference on Intelligent Tutoring Systems</em>, 164–75. Springer.
+</div>
+<div id="ref-chi2011instructional" class="csl-entry">
+Chi, Min, Kenneth R Koedinger, Geoffrey J Gordon, Pamela Jordon, and Kurt VanLahn. 2011. <span>“Instructional Factors Analysis: A Cognitive Model for Multiple Instructional Interventions.”</span>
+</div>
+<div id="ref-corbett1994knowledge" class="csl-entry">
+Corbett, Albert T, and John R Anderson. 1994. <span>“Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge.”</span> <em>User Modeling and User-Adapted Interaction</em> 4: 253–78.
+</div>
+<div id="ref-pavlik2013tutoring" class="csl-entry">
+Pavlik Jr, Philip I, Keith Brawner, Andrew Olney, and Antonija Mitrovic. 2013. <span>“Tutoring Systems.”</span> <em>Des. Recommendations Intell. Tutoring Syst</em> 1: 39–68.
+</div>
+<div id="ref-pavlik2009performance" class="csl-entry">
+Pavlik, Philip I, Hao Cen, and Kenneth R Koedinger. 2009. <span>“Performance Factors Analysis–a New Alternative to Knowledge Tracing.”</span> In <em>Artificial Intelligence in Education</em>, 531–38. Ios Press.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="its.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cits.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-studentmodels.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["ILE.pdf", "ILE.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

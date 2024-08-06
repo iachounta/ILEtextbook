@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Collaborative Learning | Course Textbook: Intelligent Learning Environments</title>
+  <meta name="description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Collaborative Learning | Course Textbook: Intelligent Learning Environments" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/./images/ILE.png" />
+  <meta property="og:description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Collaborative Learning | Course Textbook: Intelligent Learning Environments" />
+  
+  <meta name="twitter:description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  <meta name="twitter:image" content="/./images/ILE.png" />
+
+<meta name="author" content="Irene-Angelica Chounta" />
+
+
+<meta name="date" content="2024-08-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="studentmodels.html"/>
+<link rel="next" href="aied.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Intelligent Learning Environments</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i><b>1.1</b> <strong>Learning Objectives</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> <strong>Literature</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="learningtheories.html"><a href="learningtheories.html"><i class="fa fa-check"></i><b>2</b> Learning Theories and Technologies</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="learningtheories.html"><a href="learningtheories.html#how-do-people-learn"><i class="fa fa-check"></i><b>2.1</b> How do people learn?</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="learningtheories.html"><a href="learningtheories.html#behaviorism"><i class="fa fa-check"></i><b>2.1.1</b> Behaviourism</a></li>
+<li class="chapter" data-level="2.1.2" data-path="learningtheories.html"><a href="learningtheories.html#constructivism"><i class="fa fa-check"></i><b>2.1.2</b> Constructivism</a></li>
+<li class="chapter" data-level="2.1.3" data-path="learningtheories.html"><a href="learningtheories.html#social-constructivism"><i class="fa fa-check"></i><b>2.1.3</b> Social Constructivism</a></li>
+<li class="chapter" data-level="2.1.4" data-path="learningtheories.html"><a href="learningtheories.html#cognitivism"><i class="fa fa-check"></i><b>2.1.4</b> Cognitivism</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="learningtheories.html"><a href="learningtheories.html#educational-technology-and-educational-technologies"><i class="fa fa-check"></i><b>2.2</b> Educational technology and educational technologies</a></li>
+<li class="chapter" data-level="2.3" data-path="learningtheories.html"><a href="learningtheories.html#educational-technologies-and-learning-theories"><i class="fa fa-check"></i><b>2.3</b> Educational Technologies and Learning Theories</a></li>
+<li class="chapter" data-level="2.4" data-path="learningtheories.html"><a href="learningtheories.html#intelligent-learning-environments"><i class="fa fa-check"></i><b>2.4</b> Intelligent Learning Environments</a></li>
+<li class="chapter" data-level="2.5" data-path="learningtheories.html"><a href="learningtheories.html#questions-for-chapter-reflearningtheories"><i class="fa fa-check"></i><b>2.5</b> Questions for Chapter @ref(learningtheories)</a></li>
+<li class="chapter" data-level="2.6" data-path="learningtheories.html"><a href="learningtheories.html#to-read"><i class="fa fa-check"></i><b>2.6</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="its.html"><a href="its.html"><i class="fa fa-check"></i><b>3</b> Intelligent Tutoring Systems</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="its.html"><a href="its.html#a-brief-history-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.1</b> A brief history of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.2" data-path="its.html"><a href="its.html#cognitive-tutors"><i class="fa fa-check"></i><b>3.2</b> Cognitive Tutors</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="its.html"><a href="its.html#model-tracing-tutors"><i class="fa fa-check"></i><b>3.2.1</b> Model-tracing Tutors</a></li>
+<li class="chapter" data-level="3.2.2" data-path="its.html"><a href="its.html#example-tracing-tutors"><i class="fa fa-check"></i><b>3.2.2</b> Example-tracing Tutors</a></li>
+<li class="chapter" data-level="3.2.3" data-path="its.html"><a href="its.html#knowledge-tracing-tutors"><i class="fa fa-check"></i><b>3.2.3</b> Knowledge-tracing Tutors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="its.html"><a href="its.html#architecture-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.3</b> Architecture of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.4" data-path="its.html"><a href="its.html#effectiveness-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.4</b> Effectiveness of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.5" data-path="its.html"><a href="its.html#questions-for-chapter-refits"><i class="fa fa-check"></i><b>3.5</b> Questions for Chapter @ref(its)</a></li>
+<li class="chapter" data-level="3.6" data-path="its.html"><a href="its.html#to-read-1"><i class="fa fa-check"></i><b>3.6</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="studentmodels.html"><a href="studentmodels.html"><i class="fa fa-check"></i><b>4</b> Student Modeling</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="studentmodels.html"><a href="studentmodels.html#learning-curve-and-predicted-learning-curve"><i class="fa fa-check"></i><b>4.1</b> Learning Curve and Predicted Learning Curve</a></li>
+<li class="chapter" data-level="4.2" data-path="studentmodels.html"><a href="studentmodels.html#overlay-student-models"><i class="fa fa-check"></i><b>4.2</b> Overlay Student Models</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="studentmodels.html"><a href="studentmodels.html#item-response-theory-models"><i class="fa fa-check"></i><b>4.2.1</b> Item-Response Theory Models</a></li>
+<li class="chapter" data-level="4.2.2" data-path="studentmodels.html"><a href="studentmodels.html#model-tracing-models"><i class="fa fa-check"></i><b>4.2.2</b> Model-tracing Models</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="studentmodels.html"><a href="studentmodels.html#questions-for-chapter-refstudentmodels"><i class="fa fa-check"></i><b>4.3</b> Questions for Chapter @ref(studentmodels)</a></li>
+<li class="chapter" data-level="4.4" data-path="studentmodels.html"><a href="studentmodels.html#to-read-2"><i class="fa fa-check"></i><b>4.4</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="cits.html"><a href="cits.html"><i class="fa fa-check"></i><b>5</b> Collaborative Learning</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="cits.html"><a href="cits.html#computer-supported-collaborative-learning-environments"><i class="fa fa-check"></i><b>5.1</b> Computer-Supported Collaborative Learning Environments</a></li>
+<li class="chapter" data-level="5.2" data-path="cits.html"><a href="cits.html#collaborative-intelligent-tutoring-systems-citss"><i class="fa fa-check"></i><b>5.2</b> Collaborative Intelligent Tutoring Systems (CITSs)</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="cits.html"><a href="cits.html#adaptive-collaborative-learning-support"><i class="fa fa-check"></i><b>5.2.1</b> Adaptive Collaborative Learning Support</a></li>
+<li class="chapter" data-level="5.2.2" data-path="cits.html"><a href="cits.html#citss-for-problem-based-learning"><i class="fa fa-check"></i><b>5.2.2</b> CITSs for Problem-based Learning</a></li>
+<li class="chapter" data-level="5.2.3" data-path="cits.html"><a href="cits.html#citss-for-scripted-collaboration"><i class="fa fa-check"></i><b>5.2.3</b> CITSs for scripted collaboration</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="cits.html"><a href="cits.html#questions-for-chapter-refcits"><i class="fa fa-check"></i><b>5.3</b> Questions for Chapter @ref(cits)</a></li>
+<li class="chapter" data-level="5.4" data-path="cits.html"><a href="cits.html#to-read-3"><i class="fa fa-check"></i><b>5.4</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aied.html"><a href="aied.html"><i class="fa fa-check"></i><b>6</b> Artificial Intelligence in Education</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="aied.html"><a href="aied.html#what-is-intelligence"><i class="fa fa-check"></i><b>6.1</b> What is Intelligence?</a></li>
+<li class="chapter" data-level="6.2" data-path="aied.html"><a href="aied.html#what-is-artificial-intelligence"><i class="fa fa-check"></i><b>6.2</b> What is Artificial Intelligence?</a></li>
+<li class="chapter" data-level="6.3" data-path="aied.html"><a href="aied.html#artificial-intelligence-in-education-aied"><i class="fa fa-check"></i><b>6.3</b> Artificial Intelligence in Education (AIED)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="aied.html"><a href="aied.html#a-bit-of-history"><i class="fa fa-check"></i><b>6.3.1</b> A Bit of History</a></li>
+<li class="chapter" data-level="6.3.2" data-path="aied.html"><a href="aied.html#aied-premises"><i class="fa fa-check"></i><b>6.3.2</b> AIED Premises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aied.html"><a href="aied.html#ai-methods-in-education"><i class="fa fa-check"></i><b>6.4</b> AI Methods in Education</a></li>
+<li class="chapter" data-level="6.5" data-path="aied.html"><a href="aied.html#fate"><i class="fa fa-check"></i><b>6.5</b> FATE</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="aied.html"><a href="aied.html#ai-bias"><i class="fa fa-check"></i><b>6.5.1</b> AI Bias</a></li>
+<li class="chapter" data-level="6.5.2" data-path="aied.html"><a href="aied.html#accountability-transparency-in-ai"><i class="fa fa-check"></i><b>6.5.2</b> Accountability &amp; Transparency in AI:</a></li>
+<li class="chapter" data-level="6.5.3" data-path="aied.html"><a href="aied.html#ethics-and-aied"><i class="fa fa-check"></i><b>6.5.3</b> Ethics and AIED</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="aied.html"><a href="aied.html#questions-for-chapter-refaied"><i class="fa fa-check"></i><b>6.6</b> Questions for Chapter @ref(aied)</a></li>
+<li class="chapter" data-level="6.7" data-path="aied.html"><a href="aied.html#to-read-4"><i class="fa fa-check"></i><b>6.7</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Course Textbook: Intelligent Learning Environments</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="cits" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Collaborative Learning<a href="cits.html#cits" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>As we saw in earlier chapters, bevaviorism and cognitivism put emphasis on the individual when trying to decode and explain how learning happens. In contrast, social constructivism explores learning in a social environment and perceives the learner and other roles in their environment as a system.</p>
+<p>Collaborative learning builds on the premise of social constructivism. In particular, collaborative learning can be described as “<em>a situation in which two or more people learn or attempt to learn something together</em>”<span class="citation">(<a href="#ref-dillenbourg1999you">Dillenbourg 1999</a>)</span>. Collaborative learning is considered critical because it allows learners to learn and practice not only knowledge relating to a specific domain (such as physics or mathematics) but also social and soft skills, much needed for navigating within a social context. In particular, research has established that collaborative learning supports practicing communication and critical thinking skills, it is beneficial for learners’ confidence and it fosters enjoyement. Also, it promotes diversity and building trust while improving creativity and encouraging commitment.</p>
+<p>The practice of using computers as a means to mediate collaborative learning situations is called Computer-Supported Collabroative Learning (CSCL). In other words, CSCL is “<em>a pedagogical approach wherein learning takes place via social interaction using a computer or through the Internet</em>”<span class="citation">(<a href="#ref-stahl2006cambridge">Stahl et al. 2006</a>)</span></p>
+<div id="computer-supported-collaborative-learning-environments" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Computer-Supported Collaborative Learning Environments<a href="cits.html#computer-supported-collaborative-learning-environments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>CSCL Learning Environments allow learners to interact with each other and carry out learning activities in collaboration. Such environments typically offer a common workspace where learners can co-create diagrammatic representations like algorithmic flowcharts or concept maps and some additional tool to facilitate communication, for example a chat tool (see Figure <a href="cits.html#fig:synergo">5.1</a>.</p>
+<div class="figure"><span style="display:block;" id="fig:synergo"></span>
+<img src="images/synergo.jpg" alt="Synergo, a CSCL tool to support students who learned introduction to programming" width="13cm" />
+<p class="caption">
+Figure 5.1: Synergo, a CSCL tool to support students who learned introduction to programming
+</p>
+</div>
+<p>Most CSCL environments fall into one of the following three categories <span class="citation">(<a href="#ref-soller2005mirroring">Soller et al. 2005</a>)</span>:</p>
+<ul>
+<li>Mirroring: these are tools that automatically collect and process data regarding the learners’ interaction. Then, they present this information to the learners (usually through visualizations) in order to raise learners’ awareness and support self-reflection.</li>
+<li>Monitoring: such tools provide information about what the ideal collaboration and interaction should look like and compare this ideal state with the current practice. Monitoring tools aim to support learners but also teachers in diagnosing problems that the learners may encounter.<br />
+</li>
+<li>Guiding: these tools include all functions that mirroring and monitoring tools perform and additionally, they propose remedial actions to help the learners.</li>
+</ul>
+</div>
+<div id="collaborative-intelligent-tutoring-systems-citss" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Collaborative Intelligent Tutoring Systems (CITSs)<a href="cits.html#collaborative-intelligent-tutoring-systems-citss" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Intelligent Tutoring Systems (ITSs) have been criticized for their focus on individual learning and for the lack of support for social aspects of learning. To address this criticism, research has lately explored the use of ITSs for supporting collaborative learning. Such systems, named Collaborative Intelligent Tutoring Systems (CITSs), are
+“<em>learning systems that integrate Artificial intelligence into
+collaborative learning environments. CITSs have evolved from
+both ITS and CSCL</em>.” <span class="citation">(<a href="#ref-ubani2022review">Ubani and Nielsen 2022</a>)</span> Research in CITSs has focused on supporting peer tutoring and adaptive collaborative learning support (ACLS), problem-based learning and scripted collaboration.</p>
+<div id="adaptive-collaborative-learning-support" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Adaptive Collaborative Learning Support<a href="cits.html#adaptive-collaborative-learning-support" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>CITSs that focus on adaptive collaborative learning support (ACLS) adapt their characteristics, and sometimes provide intelligent hints and feedback, to improve students’ collaborative interactions. In such situations, learners typically engage in peer-tutoring scenarios where one learner plays the role of the “student” and the other learner plays the role of the “teacher”. The CITS monitors both the activity of the “student” and the “teacher” and provides feedback or guidance either to one or both of them to support their practice.</p>
+<p>An example of such a system is the Adaptive Peer Tutoring Assistant (APTA) <span class="citation">(<a href="#ref-walker2014adaptive">Walker, Rummel, and Koedinger 2014</a>)</span> that aims to support students who learn algebra. Through the CITS, the learner who plays the role of the “teacher” can watch the “student” take problem-solving actions and then, the “teacher” can mark the actions as right or wrong. The learners can communicate using a chat tool and in the same way, they can receive prompts from the CITS, which in turn they can choose to like, dislike or simply ignore.</p>
+</div>
+<div id="citss-for-problem-based-learning" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> CITSs for Problem-based Learning<a href="cits.html#citss-for-problem-based-learning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>CITS for Problem-based learning focus on modeling individual knowledge and activity in similar ways like traditional ITSs do (for example,with the use of Bayesian networks) but engaging learners in collaborative activities on shared workspaces.
+In such settings, the learners participate in group discussions that are guided by the system. In this way, learners can both use the help of hints provided by the system but also take advantage of discussions with peers.</p>
+</div>
+<div id="citss-for-scripted-collaboration" class="section level3 hasAnchor" number="5.2.3">
+<h3><span class="header-section-number">5.2.3</span> CITSs for scripted collaboration<a href="cits.html#citss-for-scripted-collaboration" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Apart from CITSs that aim to support domain knowledge (such as, math or physics), some systems aim to support soft skills, such as collaboration and communication along with domain knowledge. To do so, these systems build upon established paradigms of ITSs and they add support targeting soft skills.
+For example, <span class="citation">(<a href="#ref-olsen2016investigating">Olsen, Rummel, and Aleven 2016</a>)</span> designed a CITS that used a basic ITS for fractions but integrated collaborative scripts to support collaboration. In particular, the collaborative scripts were used by the system in order to distribute tasks and responsibilities to the learners who worked in groups in a structured manner but also in order to provide hints that aimed to help them in collaboration.</p>
+</div>
+</div>
+<div id="questions-for-chapter-refcits" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Questions for Chapter <a href="cits.html#cits">5</a><a href="cits.html#questions-for-chapter-refcits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>What is computer-supported collaborative learning and what is the learning theory that inspired this learning paradigm?</li>
+<li>What are Collaborative Intelligent Tutoring Systems (CITS)? Explain how they function and how they support learning using one example.</li>
+<li>What is the difference(s) between Intelligent Tutoring Systems and Collaborative Intelligent Tutoring Systems? When would you use an ITS, and when would you use a CITS?</li>
+</ol>
+</div>
+<div id="to-read-3" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> To-Read<a href="cits.html#to-read-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.researchgate.net/publication/37452559_Basics_of_Computer-Supported_Collaborative_Learning">Pierre, D., &amp; Frank, F. (2007). Basics of Computer-Supported Collaborative Learning. Zeitschrift für Berufs-und Wirtschaftspädagogik,(21), 111-130.</a></li>
+<li><a href="https://telearn.hal.science/file/index/docid/197378/filename/Soller-Amy-2005.pdf">Soller, A., Martinez, A., Jermann, P., &amp; Muehlenbrock, M. (2005). From mirroring to guiding: A review of state of the art technology for supporting collaborative learning. International Journal of Artificial Intelligence in Education, 15(4), 261-290.</a></li>
+</ol>
+
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-dillenbourg1999you" class="csl-entry">
+Dillenbourg, Pierre. 1999. <span>“What Do You Mean by Collaborative Learning?”</span> <em>Collaborative-Learning: Cognitive and Computational Approaches.</em>, 1–19.
+</div>
+<div id="ref-olsen2016investigating" class="csl-entry">
+Olsen, Jennifer K, Nikol Rummel, and Vincent Aleven. 2016. <span>“Investigating Effects of Embedding Collaboration in an Intelligent Tutoring System for Elementary School Students.”</span> <em>Grantee Submission</em>.
+</div>
+<div id="ref-soller2005mirroring" class="csl-entry">
+Soller, Amy, Alejandra Martinez, Patrick Jermann, and Martin Muehlenbrock. 2005. <span>“From Mirroring to Guiding: A Review of State of the Art Technology for Supporting Collaborative Learning.”</span> <em>International Journal of Artificial Intelligence in Education</em> 15 (4): 261–90.
+</div>
+<div id="ref-stahl2006cambridge" class="csl-entry">
+Stahl, Gerry, Timothy Koschmann, Dan Suthers, and R Keith Sawyer. 2006. <span>“Cambridge Handbook of the Learning Sciences.”</span> <em>Computer-Supported Collaborative Learning: An Historical Perspective</em>, 409–26.
+</div>
+<div id="ref-ubani2022review" class="csl-entry">
+Ubani, Solomon, and Rodney Nielsen. 2022. <span>“Review of Collaborative Intelligent Tutoring Systems (CITS) 2009-2021.”</span> In <em>11th International Conference on Educational and Information Technology (ICEIT)</em>, 67–75. IEEE.
+</div>
+<div id="ref-walker2014adaptive" class="csl-entry">
+Walker, Erin, Nikol Rummel, and Kenneth R Koedinger. 2014. <span>“Adaptive Intelligent Support to Improve Peer Tutoring in Algebra.”</span> <em>International Journal of Artificial Intelligence in Education</em> 24: 33–61.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="studentmodels.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="aied.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-CITS.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["ILE.pdf", "ILE.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

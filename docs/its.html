@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Intelligent Tutoring Systems | Course Textbook: Intelligent Learning Environments</title>
+  <meta name="description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Intelligent Tutoring Systems | Course Textbook: Intelligent Learning Environments" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/./images/ILE.png" />
+  <meta property="og:description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Intelligent Tutoring Systems | Course Textbook: Intelligent Learning Environments" />
+  
+  <meta name="twitter:description" content="Textbook for the course Intelligent Learning Environments - Academic Year 2024-2025" />
+  <meta name="twitter:image" content="/./images/ILE.png" />
+
+<meta name="author" content="Irene-Angelica Chounta" />
+
+
+<meta name="date" content="2024-08-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="learningtheories.html"/>
+<link rel="next" href="studentmodels.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Intelligent Learning Environments</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i><b>1.1</b> <strong>Learning Objectives</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#literature"><i class="fa fa-check"></i><b>1.2</b> <strong>Literature</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="learningtheories.html"><a href="learningtheories.html"><i class="fa fa-check"></i><b>2</b> Learning Theories and Technologies</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="learningtheories.html"><a href="learningtheories.html#how-do-people-learn"><i class="fa fa-check"></i><b>2.1</b> How do people learn?</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="learningtheories.html"><a href="learningtheories.html#behaviorism"><i class="fa fa-check"></i><b>2.1.1</b> Behaviourism</a></li>
+<li class="chapter" data-level="2.1.2" data-path="learningtheories.html"><a href="learningtheories.html#constructivism"><i class="fa fa-check"></i><b>2.1.2</b> Constructivism</a></li>
+<li class="chapter" data-level="2.1.3" data-path="learningtheories.html"><a href="learningtheories.html#social-constructivism"><i class="fa fa-check"></i><b>2.1.3</b> Social Constructivism</a></li>
+<li class="chapter" data-level="2.1.4" data-path="learningtheories.html"><a href="learningtheories.html#cognitivism"><i class="fa fa-check"></i><b>2.1.4</b> Cognitivism</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="learningtheories.html"><a href="learningtheories.html#educational-technology-and-educational-technologies"><i class="fa fa-check"></i><b>2.2</b> Educational technology and educational technologies</a></li>
+<li class="chapter" data-level="2.3" data-path="learningtheories.html"><a href="learningtheories.html#educational-technologies-and-learning-theories"><i class="fa fa-check"></i><b>2.3</b> Educational Technologies and Learning Theories</a></li>
+<li class="chapter" data-level="2.4" data-path="learningtheories.html"><a href="learningtheories.html#intelligent-learning-environments"><i class="fa fa-check"></i><b>2.4</b> Intelligent Learning Environments</a></li>
+<li class="chapter" data-level="2.5" data-path="learningtheories.html"><a href="learningtheories.html#questions-for-chapter-reflearningtheories"><i class="fa fa-check"></i><b>2.5</b> Questions for Chapter @ref(learningtheories)</a></li>
+<li class="chapter" data-level="2.6" data-path="learningtheories.html"><a href="learningtheories.html#to-read"><i class="fa fa-check"></i><b>2.6</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="its.html"><a href="its.html"><i class="fa fa-check"></i><b>3</b> Intelligent Tutoring Systems</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="its.html"><a href="its.html#a-brief-history-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.1</b> A brief history of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.2" data-path="its.html"><a href="its.html#cognitive-tutors"><i class="fa fa-check"></i><b>3.2</b> Cognitive Tutors</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="its.html"><a href="its.html#model-tracing-tutors"><i class="fa fa-check"></i><b>3.2.1</b> Model-tracing Tutors</a></li>
+<li class="chapter" data-level="3.2.2" data-path="its.html"><a href="its.html#example-tracing-tutors"><i class="fa fa-check"></i><b>3.2.2</b> Example-tracing Tutors</a></li>
+<li class="chapter" data-level="3.2.3" data-path="its.html"><a href="its.html#knowledge-tracing-tutors"><i class="fa fa-check"></i><b>3.2.3</b> Knowledge-tracing Tutors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="its.html"><a href="its.html#architecture-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.3</b> Architecture of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.4" data-path="its.html"><a href="its.html#effectiveness-of-intelligent-tutoring-systems"><i class="fa fa-check"></i><b>3.4</b> Effectiveness of Intelligent Tutoring Systems</a></li>
+<li class="chapter" data-level="3.5" data-path="its.html"><a href="its.html#questions-for-chapter-refits"><i class="fa fa-check"></i><b>3.5</b> Questions for Chapter @ref(its)</a></li>
+<li class="chapter" data-level="3.6" data-path="its.html"><a href="its.html#to-read-1"><i class="fa fa-check"></i><b>3.6</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="studentmodels.html"><a href="studentmodels.html"><i class="fa fa-check"></i><b>4</b> Student Modeling</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="studentmodels.html"><a href="studentmodels.html#learning-curve-and-predicted-learning-curve"><i class="fa fa-check"></i><b>4.1</b> Learning Curve and Predicted Learning Curve</a></li>
+<li class="chapter" data-level="4.2" data-path="studentmodels.html"><a href="studentmodels.html#overlay-student-models"><i class="fa fa-check"></i><b>4.2</b> Overlay Student Models</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="studentmodels.html"><a href="studentmodels.html#item-response-theory-models"><i class="fa fa-check"></i><b>4.2.1</b> Item-Response Theory Models</a></li>
+<li class="chapter" data-level="4.2.2" data-path="studentmodels.html"><a href="studentmodels.html#model-tracing-models"><i class="fa fa-check"></i><b>4.2.2</b> Model-tracing Models</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="studentmodels.html"><a href="studentmodels.html#questions-for-chapter-refstudentmodels"><i class="fa fa-check"></i><b>4.3</b> Questions for Chapter @ref(studentmodels)</a></li>
+<li class="chapter" data-level="4.4" data-path="studentmodels.html"><a href="studentmodels.html#to-read-2"><i class="fa fa-check"></i><b>4.4</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="cits.html"><a href="cits.html"><i class="fa fa-check"></i><b>5</b> Collaborative Learning</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="cits.html"><a href="cits.html#computer-supported-collaborative-learning-environments"><i class="fa fa-check"></i><b>5.1</b> Computer-Supported Collaborative Learning Environments</a></li>
+<li class="chapter" data-level="5.2" data-path="cits.html"><a href="cits.html#collaborative-intelligent-tutoring-systems-citss"><i class="fa fa-check"></i><b>5.2</b> Collaborative Intelligent Tutoring Systems (CITSs)</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="cits.html"><a href="cits.html#adaptive-collaborative-learning-support"><i class="fa fa-check"></i><b>5.2.1</b> Adaptive Collaborative Learning Support</a></li>
+<li class="chapter" data-level="5.2.2" data-path="cits.html"><a href="cits.html#citss-for-problem-based-learning"><i class="fa fa-check"></i><b>5.2.2</b> CITSs for Problem-based Learning</a></li>
+<li class="chapter" data-level="5.2.3" data-path="cits.html"><a href="cits.html#citss-for-scripted-collaboration"><i class="fa fa-check"></i><b>5.2.3</b> CITSs for scripted collaboration</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="cits.html"><a href="cits.html#questions-for-chapter-refcits"><i class="fa fa-check"></i><b>5.3</b> Questions for Chapter @ref(cits)</a></li>
+<li class="chapter" data-level="5.4" data-path="cits.html"><a href="cits.html#to-read-3"><i class="fa fa-check"></i><b>5.4</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aied.html"><a href="aied.html"><i class="fa fa-check"></i><b>6</b> Artificial Intelligence in Education</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="aied.html"><a href="aied.html#what-is-intelligence"><i class="fa fa-check"></i><b>6.1</b> What is Intelligence?</a></li>
+<li class="chapter" data-level="6.2" data-path="aied.html"><a href="aied.html#what-is-artificial-intelligence"><i class="fa fa-check"></i><b>6.2</b> What is Artificial Intelligence?</a></li>
+<li class="chapter" data-level="6.3" data-path="aied.html"><a href="aied.html#artificial-intelligence-in-education-aied"><i class="fa fa-check"></i><b>6.3</b> Artificial Intelligence in Education (AIED)</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="aied.html"><a href="aied.html#a-bit-of-history"><i class="fa fa-check"></i><b>6.3.1</b> A Bit of History</a></li>
+<li class="chapter" data-level="6.3.2" data-path="aied.html"><a href="aied.html#aied-premises"><i class="fa fa-check"></i><b>6.3.2</b> AIED Premises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aied.html"><a href="aied.html#ai-methods-in-education"><i class="fa fa-check"></i><b>6.4</b> AI Methods in Education</a></li>
+<li class="chapter" data-level="6.5" data-path="aied.html"><a href="aied.html#fate"><i class="fa fa-check"></i><b>6.5</b> FATE</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="aied.html"><a href="aied.html#ai-bias"><i class="fa fa-check"></i><b>6.5.1</b> AI Bias</a></li>
+<li class="chapter" data-level="6.5.2" data-path="aied.html"><a href="aied.html#accountability-transparency-in-ai"><i class="fa fa-check"></i><b>6.5.2</b> Accountability &amp; Transparency in AI:</a></li>
+<li class="chapter" data-level="6.5.3" data-path="aied.html"><a href="aied.html#ethics-and-aied"><i class="fa fa-check"></i><b>6.5.3</b> Ethics and AIED</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="aied.html"><a href="aied.html#questions-for-chapter-refaied"><i class="fa fa-check"></i><b>6.6</b> Questions for Chapter @ref(aied)</a></li>
+<li class="chapter" data-level="6.7" data-path="aied.html"><a href="aied.html#to-read-4"><i class="fa fa-check"></i><b>6.7</b> To-Read</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Course Textbook: Intelligent Learning Environments</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="its" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Intelligent Tutoring Systems<a href="its.html#its" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In 1920s, <a href="https://en.wikipedia.org/wiki/Sidney_L._Pressey">Sydney Pressey</a>, a psycology professor from Ohio State University, developed a mechanical artifact (that is, a <strong>machine</strong>) to provide standardized exercises to students for practicing. Pressey believed that ‘<strong>the procedure in mastery of drill and informational material were in many instances simple and definite enough to permit handling of much routine teaching by mechanical means.</strong>’ Today, Pressey’s ‘teaching machine’ can be considered as the first attempt for designing Intelligent Tutoring Systems because not only it allowed students to practice on their own without the support of a teacher, but also because it provided real time feedback: Pressey fixed the machine so that the question remained until the student selected the correct answer.</p>
+<p>Pressey’s teaching machine encaptulates the premise of Intelligent Tytoring Systems (ITSs): allowing learners to practice on their own while they receive real-time feedback that addresses their individual needs. This premise is reflected in the following definition of ITSs: “[an ITS is] a computer system that aims to provide immediate and customized instruction or feedback to learners.” <span class="citation">(<a href="#ref-psotka1988intelligent">Psotka, Massey, and Mutter 1988</a>)</span> It is important to note that ITSs do not aim to replace the human tutor but, instead, to support humans in tutoring, enabling and facilitating their pracice.</p>
+<div id="a-brief-history-of-intelligent-tutoring-systems" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> A brief history of Intelligent Tutoring Systems<a href="its.html#a-brief-history-of-intelligent-tutoring-systems" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>One of -if not- the first intelligent tutoring program, SCHOLAR <span class="citation">(<a href="#ref-carbonell1970mixed">Carbonell 1970</a>)</span> aimed at engaging learners in learning about georgaphy following a dialogue-based approach. That is, the ITS would ask and answer questions while keeping track of the ongoing dialogue structure. To do so, SCHOLAR was using in the background a semantic network to represent domain knowledge. In this way, the ITS could provide appropriate feedback to the learner, and at the same time, keep track of the knowledge that the learner was acquiring. However, computational limitations in sustaining a natural dialogue and complexity of designing and maintaining the domain knowledge representation made it challenging to develop and deploy such tutoring systems.</p>
+<p>Following, coached practice became popular with ITSs like the PAT Algebra Tutor <span class="citation">(<a href="#ref-anderson1995cognitive">Anderson et al. 1995</a>)</span>. In such environments, instruction is delivered as learners engage in problem solving tasks. Coached practice embodies the “learning-by-doing” model of cognitive skill acquisition: that is, learners are demonstrated how they should approach and deal with problem-solving and are asked to repeat this practice until they have mastered the skill at hand. As one may expect, problem-solving ITSs focus on STEM domains because of these domain’s standardized formalism. Furthermore, a problem solving task constrains the solution and reasoning space for both the learner and tutor, because there is a finite number of acceptable solution. Therefore, the tutor can most of the times interpret the learner’s action or - in worst case - offer some advice. This consequently means that coached practice with problem-solving tutors lowers the complexity that dialogue-based tutors face and are, therefore, easier to develop and deploy.</p>
+</div>
+<div id="cognitive-tutors" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Cognitive Tutors<a href="its.html#cognitive-tutors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A sub-category of problem-solving ITSs are the Cognitive Tutors, that are based on ACT-R theory of skill knowledge <span class="citation">(<a href="#ref-anderson2013architecture">Anderson 2013</a>)</span>. This theory assumes a fundamental distinction between declarative knowledge and procedural knowledge (see <a href="learningtheories.html#learningtheories">2</a>). ACT-R assumes that skill knowledge is encoded initially in declarative form as informed by the learner’s experience. Then, through practicing, the learner learns or constructs general rules while solving problems. These rules are encoded as procedural knowledge. For representing procedural knowledge, ACT-R uses production rules. These rules aim to describe the relationship between problem solving goals, learners’ actions and states.</p>
+<p>Remember the example we discussed in the class: how does a student learn to solve equations? Then looking at the interface of a math tutor (see Figure <a href="#mathtutor"><strong>??</strong></a>), try to explain the problem-solving practice of a student and how the ITS captures the declarative and procedural knowledge.</p>
+<div class="figure"><span style="display:block;" id="fig:mathtutor"></span>
+<img src="images/mathtutor.png" alt="An example interface of a math tutor, taken from the [CMU Math Tutors](https://mathtutor.web.cmu.edu/home)" width="306" />
+<p class="caption">
+Figure 3.1: An example interface of a math tutor, taken from the <a href="https://mathtutor.web.cmu.edu/home">CMU Math Tutors</a>
+</p>
+</div>
+<div id="model-tracing-tutors" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Model-tracing Tutors<a href="its.html#model-tracing-tutors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Model-tracing tutors check learners’ activity on the <em>action</em> level. This means that they keep track of every action a learner makes while solving a problem, like for example ckicking a button. These tutors solve a problem concurrently with the learner and compare the learners’ actions to an internal representation of the solution space (possible solutions). To represent the solution space, the model-tracing tutor uses sets of <strong>production rules</strong>. Then, depending on the result of this commparison, if the student action matches a production rule action it is assumed that the student has fired the same cognitive rule and the actions are carried out. If not, the tutor reports that it does not recognize the student’s action.
+The complete set of production rules that represent the solution space comprise the cognitive model.</p>
+</div>
+<div id="example-tracing-tutors" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Example-tracing Tutors<a href="its.html#example-tracing-tutors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In contrast to model-tracing tutors, the example-tracing tutors try to understand learners’ behavior based on specific or typical examples of problem-solving behaviour. That is, instead of matching each action that the learners’ can make to the solution space represented by production rules, they try to match the solution path of a learner to potential solutions. To provide real-time feedback, example-tracing tutors use behavior graphs. These graphs represent a finite number of typical solution paths a learner can follow when solving a problem.</p>
+</div>
+<div id="knowledge-tracing-tutors" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Knowledge-tracing Tutors<a href="its.html#knowledge-tracing-tutors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Knowledge-tracing tutors are similar to model-tracing tutors. However, instead of tracing the learners’ actions, they are used to calculate the required skills (<strong>knowledge</strong>) students learned. This can be done by employing knowledge graphs or bayesian knowledge models that assess learners’ knowledge on specific knowedge components.</p>
+</div>
+</div>
+<div id="architecture-of-intelligent-tutoring-systems" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Architecture of Intelligent Tutoring Systems<a href="its.html#architecture-of-intelligent-tutoring-systems" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The fundamental architecture of an ITS consists of four components (see Figure <a href="#itsarchitecture"><strong>??</strong></a>):</p>
+<ul>
+<li>The interface component supports student interaction (input/output) with the ITS.</li>
+<li>The domain model contains the rules, concepts, and knowledge related to the domain that should be learned.</li>
+<li>The student model keeps track of the students’ knowledge: their cognitive and affective states, and their progress as they learn. One may describe the student model as an annotated version of the domain model with information about the student’s performance.</li>
+<li>The pedagogical model uses the data gained from the domain model and student model to make decisions about instructional strategies such as when to give feedback, what kind of learning activity should be provided next to the student and if the student has mastered a skill and is ready to move to the next topic.</li>
+</ul>
+<div class="figure"><span style="display:block;" id="fig:itsarchitecture"></span>
+<img src="images/ITSarchitecture.png" alt="The architecture of an Intelligent Tutoring System" width="1938" />
+<p class="caption">
+Figure 3.2: The architecture of an Intelligent Tutoring System
+</p>
+</div>
+</div>
+<div id="effectiveness-of-intelligent-tutoring-systems" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Effectiveness of Intelligent Tutoring Systems<a href="its.html#effectiveness-of-intelligent-tutoring-systems" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In 1984, <a href="https://en.wikipedia.org/wiki/Benjamin_Bloom">Bejnamin Bloom</a> discussed the effectiveness of human tutoring. In his work, Bloom used the term “human tutoring” to refer to an adult, subject-matter expert working synchronously with a single student and suggested that human tutoring was the most effective kind of instruction, with an effect size of d = 2.0 relative to classroom teaching without tutoring <span class="citation">(<a href="#ref-bloom19842">Bloom 1984</a>)</span>. In contrast, CAI tends to produce an effect size of d = 0.31 <span class="citation">(<a href="#ref-kulik1991effectiveness">Kulik and Kulik 1991</a>)</span>.</p>
+<p>In 2011, Kurt VanLehn <span class="citation">(<a href="#ref-vanlehn2011relative">VanLehn 2011</a>)</span> published a wide review of ITS-related studies that demonstrated the following:
+1. human tutoring is not as effective as we once thought;
+2. ITS are almost as effective as adult, one-on-one human tutoring;
+3. None of the studies replaced a classroom teacher with ITS.</p>
+<p>Based on the above, Van Lehn concluded that ITSs are indeed as effective as human tutors in the condition where ITSs are used along classroom instruction. Thus, ITSs could be used to replace homework in order to enhance practice outside the classroom, but not as a substitute of the classroom experience.</p>
+</div>
+<div id="questions-for-chapter-refits" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Questions for Chapter <a href="its.html#its">3</a><a href="its.html#questions-for-chapter-refits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>What is an intelligent tutoring system? Definition, principles, and basic architecture.</li>
+<li>What is / are the fundamental learning theory or theories behind Intelligent Tutoring Systems? Please elaborate.</li>
+<li>What is the basic architecture of Intelligent Tutoring Systems and what are their fundamental components?</li>
+<li>There is a saying that human tutoring is the golden standard. What do you think?</li>
+<li>What is the difference between model-tracing, example-tracing and knowledge-tracing ITSs?</li>
+<li>What are the behavior graphs that are typically used by example-tracing tutors?</li>
+</ol>
+</div>
+<div id="to-read-1" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> To-Read<a href="its.html#to-read-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><a href="http://act-r.psy.cmu.edu/wordpress/wp-content/uploads/2012/12/173Chapter_37_Intelligent_Tutoring_Systems.pdf">Corbett, A. T., Koedinger, K. R., &amp; Anderson, J. R. (1997). Intelligent tutoring systems. In Handbook of human-computer interaction (pp. 849-874). North-Holland.</a></li>
+<li><a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;scioq=Toward+combining+individual+and+collaborative+learning+within+an+intelligent+tutoring+system.+In%C2%A0Artificial+Intelligence+in+Education&amp;q=Example-Tracing+Tutors%3A+A+New+Paradigm+for+Intelligent+Tutoring+Systems&amp;btnG=#:~:text=include%20citations-,%5BPDF%5D%20cmu.edu,-%5BPDF%5D%20Example">Aleven, V., McLaren, B., Sewall, J., &amp; Koedinger, K. R. (2009). Example-tracing tutors: A new paradigm for intelligent tutoring systems.</a></li>
+</ol>
+
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-anderson2013architecture" class="csl-entry">
+Anderson, John R. 2013. <em>The Architecture of Cognition</em>. Psychology Press.
+</div>
+<div id="ref-anderson1995cognitive" class="csl-entry">
+Anderson, John R, Albert T Corbett, Kenneth R Koedinger, and Ray Pelletier. 1995. <span>“Cognitive Tutors: Lessons Learned.”</span> <em>The Journal of the Learning Sciences</em> 4 (2): 167–207.
+</div>
+<div id="ref-bloom19842" class="csl-entry">
+Bloom, Benjamin S. 1984. <span>“The 2 Sigma Problem: The Search for Methods of Group Instruction as Effective as One-to-One Tutoring.”</span> <em>Educational Researcher</em> 13 (6): 4–16.
+</div>
+<div id="ref-carbonell1970mixed" class="csl-entry">
+Carbonell, Jaime R. 1970. <span>“Mixed-Initiative Man-Computer Instructional Dialogues. Final Report.”</span>
+</div>
+<div id="ref-kulik1991effectiveness" class="csl-entry">
+Kulik, Chen-Lin C, and James A Kulik. 1991. <span>“Effectiveness of Computer-Based Instruction: An Updated Analysis.”</span> <em>Computers in Human Behavior</em> 7 (1-2): 75–94.
+</div>
+<div id="ref-psotka1988intelligent" class="csl-entry">
+Psotka, Joseph, Leonard Daniel Massey, and Sharon A Mutter. 1988. <em>Intelligent Tutoring Systems: Lessons Learned</em>. Psychology Press.
+</div>
+<div id="ref-vanlehn2011relative" class="csl-entry">
+VanLehn, Kurt. 2011. <span>“The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems.”</span> <em>Educational Psychologist</em> 46 (4): 197–221.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="learningtheories.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="studentmodels.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-ITS.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["ILE.pdf", "ILE.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
