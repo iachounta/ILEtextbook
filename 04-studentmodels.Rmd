@@ -9,19 +9,19 @@ When discussing about the architecture of Intelligent Tutoring Systems (Chapter 
 ## Learning Curve and Predicted Learning Curve
 An old saying states that "practice makes better" and another one says that "repetition is the mother of learning". From our own experience, we can attest that learning happens as humans practice over time. This idea is depicted by the concept of the Learning Curve (see Figure \@ref(fig:learningcurve)). Practically, this curve shows that the more a human practices a skill or a piece of knowledge, the more they learn. 
 
-```{r learningcurve, out.width ="13cm", fig.cap="An ideal learning curve that demonstrates the relationship between experience and learning", echo=FALSE, message=FALSE, warning=FALSE}
+```{r learningcurve, out.width ="10cm", fig.cap="An ideal learning curve that demonstrates the relationship between experience and learning", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/learningcurve.png")
 ```
 
 Figure \@ref(fig:learningcurve) shows an ideal curve and Figure \@ref(fig:learningcurvestages) shows different stages of the learning process, as they can be traced on a learning curve. 
 
-```{r learningcurvestages, out.width ="13cm", fig.cap="The different stages of the learning process as depicted on an ideal learning curve that demonstrates the relationship between time and learning", echo=FALSE, message=FALSE, warning=FALSE}
+```{r learningcurvestages, out.width ="10cm", fig.cap="The different stages of the learning process as depicted on an ideal learning curve that demonstrates the relationship between time and learning", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/learningcurvestages.png")
 ```
 
 In reality, an empirical learning curve (that is, the average correct responses for a skill over each learning opportunity) as calculated by data is not as smooth as the ideal learning curve (see Figure \@ref(fig:empiricallearningcurve). This may happen due to recording errors, but also to the complicated nature of learning (such as forgetting or slipping). 
 
-```{r empiricallearningcurve, out.width="13cm", fig.cap="The different stages of the learning process as depicted on a more realistic learning curve", echo=FALSE, message=FALSE, warning=FALSE}
+```{r empiricallearningcurve, out.width="10cm", fig.cap="The different stages of the learning process as depicted on a more realistic learning curve", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/empiricallearningcurve.png")
 ```
 
@@ -31,7 +31,7 @@ Precicted learning curves may reveal the following [@cen2007over]:
 1.    How much practice a student needs to master a skill; Ideally, a predicted learning curve should start high and end high (why?)
 2.    What is the optimal set of skills to match the learners' needs; as before, a predicted learning curve should start high and end high (why?)
 
-```{r predictedlearningcurve, out.width="13cm", fig.cap="The predicted learning curve shows a precise prediction of students' success rate at each learning opportunity", echo=FALSE, message=FALSE, warning=FALSE}
+```{r predictedlearningcurve, out.width="10cm", fig.cap="The predicted learning curve shows a precise prediction of students' success rate at each learning opportunity", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/predictedlearningcurve.png")
 ```
 

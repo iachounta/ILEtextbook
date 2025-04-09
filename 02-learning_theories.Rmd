@@ -62,7 +62,7 @@ In short, cognitivism is a learning theory that focuses on how information is re
 
 One of the most prominent representations of the human brain as a computer is portrayed in the Multi-store Model [@atkinson1968human] (see Figure \@ref(fig:multistoremodel)). According to this model, human memory consists of three separate memory stores connected a linear sequence: the sensory memory, the short-term memory and the long-term memory. Learning happens as information is transferred between these stores, from the human sensors (for example, eyes and ears) until it is successfully stored in the long term memory. 
 
-```{r multistoremodel, out.width = "13cm", fig.cap="A simplified representation of human memory according to the Multi-store Model", echo=FALSE, message=FALSE, warning=FALSE}
+```{r multistoremodel, out.width = "10cm", fig.cap="A simplified representation of human memory according to the Multi-store Model", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/multistoremodel.png")
 ```
 Regarding the capacity of human memory, Sweller [@sweller1994cognitive] discussed the Cognitive Load Theory and explained how limitations of human memory can have a negative impact on learning. Specifically, Sweller argued that our working memory can hold a small amount of information at one time. Therefore, teaching should aim at avoiding overloading working memory if we want to support learning.
@@ -107,12 +107,12 @@ Learning Theories are reflected in the design and implementation of Educational 
 
 ## Intelligent Learning Environments
 The term "Intelligent Learning Environents" refers to learning environments (or else, educational technologies) that facilitate and promote human-centered learning, that is placing the learner at the center of the learning process. These aspects are demonstrated in the following definitions of Intelligent Learning Environments:
--    "...a category of educational software in which the learner is `put' into a problem solving situation." [REF] 
+-    "...a category of educational software in which the learner is `put' into a problem solving situation." [@dillenbourg1994intelligent] 
 
--    "...a learning environment that allows for student-driven learning" [REF]
+-    "...a learning environment that allows for student-driven learning" [@kay1997learner]
 
 Taking into account the above, Manolis Mavrikis and Wayne Holmes provided the following overarching definition for modern, intelligent learning environments: 
-"**[intelligent learning environments is] a broad category of digital educational interactive applications equipped with features that enable the provision of personalized, adaptive support to students**" [REF]
+"*[intelligent learning environments is] a broad category of digital educational interactive applications equipped with features that enable the provision of personalized, adaptive support to students*" [@mavrikis2019intelligent]
 
 
 ## Questions for Chapter \@ref(learningtheories)

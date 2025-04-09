@@ -15,7 +15,7 @@ A sub-category of problem-solving ITSs are the Cognitive Tutors, that are based 
 
 Remember the example we discussed in the class: how does a student learn to solve equations? Then looking at the interface of a math tutor (see Figure \@ref(fig:mathtutor)), try to explain the problem-solving practice of a student and how the ITS captures the declarative and procedural knowledge.
 
-```{r mathtutor, fig.cap="An example interface of a math tutor, taken from the [CMU Math Tutors](https://mathtutor.web.cmu.edu/home)", echo=FALSE, message=FALSE, warning=FALSE}
+```{r mathtutor, out.width = "13cm", fig.cap="An example interface of a math tutor, taken from the [CMU Math Tutors](https://mathtutor.web.cmu.edu/home)", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/mathtutor.png")
 ```
 
@@ -39,7 +39,7 @@ The fundamental architecture of an ITS consists of four components (see Figure \
 -    The pedagogical model uses the data gained from the domain model and student model to make decisions about instructional strategies such as when to give feedback, what kind of learning activity should be provided next to the student and if the student has mastered a skill and is ready to move to the next topic.
 
 
-```{r itsarchitecture, fig.cap="The architecture of an Intelligent Tutoring System", echo=FALSE, message=FALSE, warning=FALSE}
+```{r itsarchitecture, out.width = "13cm", fig.cap="The architecture of an Intelligent Tutoring System", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/ITSarchitecture.png")
 ```
 ## Effectiveness of Intelligent Tutoring Systems

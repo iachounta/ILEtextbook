@@ -19,7 +19,7 @@ Artificial Intelligence in education (AIED) is an academic field of enquiry, off
 
 Although the field itself was established in the 80s, it has roots way earlier (see Figure \@ref(fig:aiedstory). For example, [Herbert Simon](https://en.wikipedia.org/wiki/Herbert_A._Simon) and [Allen Newell](https://en.wikipedia.org/wiki/Allen_Newell) wrote in the '50s a computer program, **the logical theorist** that could prove mathematical theorems and in some cases it produced the same or better results than actual mathematicians :) In the '70s, LOGO - a general purpose programming language - was used to teach students about geometry with the use of visualizations. In the 90's, John Anderson proposed the cognitive architecture ACT-R that set the foundations for modern Cognitive Tutors. 
 
-```{r aiedstory, out.width ="13cm", fig.cap="A timeline of AIED", echo=FALSE, message=FALSE, warning=FALSE}
+```{r aiedstory, out.width ="10cm", fig.cap="A timeline of AIED", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/AIEDhistory.png")
 ```
 
@@ -53,11 +53,11 @@ Data-driven bias arises due to problems in the data that we use to train AI. Thr
 #### Bias due to class imbalance
 
 Class imbalance can occur when the real population distribution (see Figure \@ref(fig:classdistribution)) does not match the sample population distribution (see Figure \@ref(fig:classimbalance)) that is used to train the AI algorithm. This is a problem because the prediction always follows training. So if the model is trained on a sample that one class is the majority, then the prediction will favor the majority class. 
-```{r classdistribution, out.width= "13cm", fig.cap="The real population distribution of beavers in the wild nature", echo=FALSE, message=FALSE, warning=FALSE}
+```{r classdistribution, out.width= "8cm", fig.cap="The real population distribution of beavers in the wild nature", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/classdistribution.png")
 ```
 
-```{r classimbalance, out.width= "13cm", fig.cap="The sample population distribution of beavers used for AI training", echo=FALSE, message=FALSE, warning=FALSE}
+```{r classimbalance, out.width= "8cm", fig.cap="The sample population distribution of beavers used for AI training", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/classimbalance.png")
 ```
 
@@ -68,7 +68,7 @@ To solve this problem, one should ensure that either the sample population refle
 Sometimes, there may be hidden features or attributes that affect the balance of the dataset but they are hard to account for, either because they are not explicitly related to the features one want to model or because they are simply not visible and not considered. However, these features can still come into play when training AI algorithms and lead to bias.
 In the beavers' example (see Figure \@ref(fig:classdistribution)), such an attribute could be the sex of the beavers that, when left unaccounted could lead to favoring male beavers over female beavers since, depending on the sampling, can end up being the majority class (see Figure \@ref(fig:beavershidden)). 
 
-```{r beavershidden, out.width= "13cm", fig.cap="The sample population distribution of beavers marked with the hidden feature", echo=FALSE, message=FALSE, warning=FALSE}
+```{r beavershidden, out.width= "10cm", fig.cap="The sample population distribution of beavers marked with the hidden feature", echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/beaverssex.png")
 ```
 

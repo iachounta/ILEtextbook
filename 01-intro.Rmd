@@ -9,7 +9,7 @@ Computers and '*machine-intelligence*' are frequently discussed as the means for
 
 - Learning Theories and Technologies
 - Artificial intelligence in education (AIED)
-- Student Modeling]]  
+- Student Modeling
 - Intelligent Tutoring Systems (ITS)
 - Collaborative learning environments
 - Fairness, Accountability, Transparency, and Ethics in AIED
